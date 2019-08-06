@@ -5,12 +5,17 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "start:prod": "node prod.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@material/card": "^3.1.0",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
     "core-js": "^2.6.5",
     "register-service-worker": "^1.6.2",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "@material/ripple": "latest"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.10.0",

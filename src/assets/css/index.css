@@ -1,0 +1,39 @@
+
+#overlay{
+    background-color: #919191;
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100vw; /* Full width (cover the whole page) */
+    height: 100vh; /* Full height (cover the whole page) */
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    z-index: 2;
+}
+
+#overlay.open{
+    display: block;
+    opacity: 0.5;
+}
+
+.sidebar-placeholder {
+    float: left;
+    position: relative;
+    width: 80px;
+    height: 100vh;
+    padding-right: 100px;
+}
+
+.sidebar {
+    background-color: darkcyan;
+    float: left;
+    position: absolute;
+    height: 100vh;
+    width: 80px;
+    transition: all 0.5s ease;
+    z-index: 3;
+}
+
+.sidebar:hover {
+    transform: scaleX(7);
+    transition: all 0.5s ease;
+}
