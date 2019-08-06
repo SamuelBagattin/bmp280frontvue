@@ -55,7 +55,7 @@
         },
         mounted() {
             Axios
-                .get("https://bmp280.herokuapp.com/" + 'api/capteur')
+                .get('https://bmp280.herokuapp.com/api/capteur')
                 .then(response => {
                     this.info = response.data
                 })
